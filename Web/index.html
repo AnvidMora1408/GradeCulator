@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeCulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="scroll-link" href="#form-section">Calculator</a></li>
+            <li><a class="scroll-link" href="#advice-section">Advice</a></li>
+            <li><a class="scroll-link" href="#techniques-section">Techniques</a></li>
+        </ul>
+    </nav>
+    
+    <div id="container">
+        <header>
+            <h1>GradeCulator</h1>
+        </header>
+
+        <section id="form-section">
+            <h2>Welcome to GradeCulator!</h2>
+            <p>Calculate your grade with ease. (Bro, I hope you don't fail... )</p>
+            <p>Enter your grades and their weights (the calculation works with percentages).</p>
+            <form id="gradeForm">
+                <div class="grade-input">
+                    <input type="number" id="grade1" placeholder="Grade 1">
+                    <input type="number" id="weight1" placeholder="Weight 1 (%)">
+                </div>
+                <div class="grade-input">
+                    <input type="number" id="grade2" placeholder="Grade 2">
+                    <input type="number" id="weight2" placeholder="Weight 2 (%)">
+                </div>
+                <div id="buttons">
+                    <button type="button" onclick="addYerGrade()">Add Grade</button>
+                    <button type="button" onclick="delYerGrade()">Remove Grade</button>
+                </div>
+                <button type="button" onclick="CalcYerGrade()">Calculate</button>
+            </form>
+            <div id="result"></div>
+        </section>
+
+        <section id="advice-section">
+            <h2>How to Get Better Grades</h2>
+            <p>Maybe your results were not the best, but don't worry. I'm here to help you with some interesting techniques to be the best student in your class!</p>
+            <h3>Advices</h3>
+            <ul>
+                <li>Find a reason to get better grades. You need motivation, maybe to show your parents your education is worth it or to get an academic discount to help them.</li>
+                <li>Create a realistic study schedule that includes time for fun, eating, and sleeping. Write down your goals and objectives to avoid procrastination and track your progress.</li>
+                <li>Actively participating in class helps you pay attention and remember what was said.</li>
+                <li>Keep your study space clean and distraction-free. You can also try studying with other students.</li>
+                <li>A good night's sleep helps your brain process the information you've learned.</li>
+                <li>Try to emphasize understanding the material instead of just memorizing it.</li>
+                <li>A very important thing to remember is to stay consistent.</li>
+                <li>Stay organized by keeping a planner or digital calendar to track assignments and deadlines.</li>
+                <li>Break down large projects into smaller, manageable tasks to avoid feeling overwhelmed.</li>
+                <li>Take regular breaks during study sessions to maintain focus and avoid burnout.</li>
+                <li>Practice active reading by summarizing information in your own words and asking questions about the material.</li>
+                <li>Join study groups to gain different perspectives and clarify doubts with peers.</li>
+                <li>Utilize school resources such as tutoring centers, libraries, and online databases.</li>
+                <li>Stay positive and maintain a growth mindset, believing that you can improve with effort and practice.</li>
+                <li>Seek feedback from teachers and use it to improve your understanding and performance.</li>
+                <li>Balance your academic life with extracurricular activities to develop a well-rounded skill set.</li>
+                <li>Stay hydrated and maintain a healthy diet to keep your mind and body in optimal condition for learning.</li>
+            </ul>
+        </section>
+
+        <section id="techniques-section">
+            <h2>Study Techniques</h2>
+            <h3>The Pomodoro Technique</h3>
+            <p>Work for 25 minutes, then take a 5-minute break. Repeat.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mNBmG24djoY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h3>The Feynman Technique</h3>
+            <p>I think this one is the most famous technique, it consist in explaining the concept you're learning in simple terms as if teaching it to a child.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tkm0TNFzIeg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h3>The Leitner System</h3>
+            <p>Use flashcards and review them in increasing intervals of time.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oH-_3NBquSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4>Introducing Aki</h4>
+            <p>Aki is a powerful flashcards program that helps you implement the Leitner System effectively. With Aki, you can:</p>
+            <ul>
+                <li>You can create and organize flashcards easily!</li>
+                <li>Track your progress and review cards at optimal intervals.</li>
+                <li>Use multimedia elements like images and audio to enhance your learning experience.</li>
+                <li>Sync your flashcards across multiple devices.</li>
+                <li>Access a vast library of pre-made flashcards shared by other users<br>
+                this is what i recommend if you've never used flashcards before, you can<br>
+                download flashcards made by the community and start studying !</li>
+            </ul>
+            <p>Start using Aki today to boost your learning efficiency and retention! i recommend it.</p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
